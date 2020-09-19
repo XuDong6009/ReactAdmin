@@ -1,12 +1,13 @@
 import React ,{Component} from "react";
-import { Button } from 'antd';
-
+import { Button,Switch } from 'antd';
+import './App.less'
 export default class App extends Component {
     render() {
         return (
             <div>
                 App描述
-                <Button>点击按钮</Button>
+                <Switch defaultChecked />
+                <Button type="primary">点击按钮</Button>
             </div>
         );
     }
